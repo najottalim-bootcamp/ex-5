@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using exfive.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace exfive.Data
 {
@@ -17,5 +18,7 @@ namespace exfive.Data
             //modelBuilder.Entity<DishIngredient>().HasNoKey();
             base.OnModelCreating(modelBuilder);
         }
+
+        public DbSet<User> Users { get; set; }
     }
 }

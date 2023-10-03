@@ -6,7 +6,7 @@ public interface IUserRepository
 {
     public Task<User> GetByIdAsync(int id);
 
-    public Task<bool> GelAllAsnyc();
+    public IEnumerable<User> GelAllAsnyc();
 
     public Task<bool> CreateAsync(User user);
 
